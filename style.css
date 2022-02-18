@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url("\wartungsarbeiten.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100vh;
+  opacity: 0.9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  min-width: 20%;
+}
+
+.container > * {
+  margin-bottom: 1em;
+}
+
+.forum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border: 3px solid white;
+  padding: 1em 0em;
+}
+
+.forum > * {
+  margin-bottom: 1em;
+  border-radius: 3px;
+  border: none;
+  padding: 0.4em;
+  width: 90%;
+}
+
+.forum button {
+  background-color: rgb(63, 52, 218);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  padding: 0.2em;
+  font-size: 0.9em;
+  text-align: center;
+  transition: all 1s;
+}
+
+.forum button:hover {
+  background-color: rgb(34, 22, 211);
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.7em;
+}
